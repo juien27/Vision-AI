@@ -128,11 +128,11 @@ npm run dev
 
 ## 🖼️ Web Application Interface
 ### Vision Engine Interface
-![Prediction](Output/1.png)
+![1](output/1.png)
 
 ### Avatar Creator Interface
-![2](Output/2.png)
-![3](Output/3.png)
+![2](output/2.png)
+![3](output/3.png)
 
 ## API Endpoints
 
