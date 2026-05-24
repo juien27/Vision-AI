@@ -1,0 +1,673 @@
+2026-04-11 13:08:48,209 - Error for query 'describe all images': 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 12.119609452s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 12
+}
+]
+2026-04-11 13:11:05,422 - Query: describe all images | Answer: The eight images show the following:
+
+*   **Image 1:** A sleek, red luxury SUV (Ferrari Purosangue) parked on a dirt road, surrounded by lush green fields under a cloudy sky.
+*   **Image 2:** A close-up portrait of an adorable grey and white kitten with large, expressive dark eyes sitting against a neutral background.
+*   **Image 3:** A young girl jumping high in the air with excitement. She is wearing a white top and a denim skirt, set against a bright solid orange background.
+*   **Image 4:** A beagle dog wearing a red collar, lying calmly on a beige rug inside a living room.
+*   **Image 5:** A large African elephant with long tusks standing in a green field with a dense forest in the background.
+*   **Image 6:** An underwater scene featuring a group of dolphins swimming through blue water near a vibrant coral reef populated with colorful tropical fish.
+*   **Image 7:** A man with a beard passionately singing into a microphone. He is wearing a white t-shirt and a dark denim jacket, presented on a plain white background.
+*   **Image 8:** A beautiful sunset over the ocean, with the sky painted in brilliant shades of orange, red, and yellow, reflecting on the calm water.
+2026-04-13 13:22:57,891 - Query: what is in the image | Answer: In the image, there is a tricolor Beagle dog lying on a beige rug indoors. The dog is wearing a red collar and is looking towards the left of the frame. In the background, you can see a couch and a potted houseplant.
+2026-04-13 13:24:11,207 - Query: explain the image | Answer: The provided images show two different dogs in different settings:
+
+1.  **First Image:** This is a clear, well-lit photo of a **Beagle** lying down on a light-colored rug inside a home. The dog has characteristic long, floppy ears and a tri-color coat of white, tan, and black. It is wearing a red collar and is looking off to the side. In the background, there is a sofa and a potted plant near a window.
+2.  **Second Image:** This is a very blurry, out-of-focus photo of a **tan-colored dog**. The dog appears to have pointed ears and a curly white tail, which are features often seen in breeds like a Shiba Inu. It is shown from the side, looking to the left, and seems to be outdoors or in a garage area with a bicycle or motorcycle wheel visible in the background.
+2026-04-13 13:24:36,386 - Query: explain the image | Answer: The image is a very blurry, out-of-focus photograph of a light brown or tan dog. The dog has pointed ears and a fluffy white tail that curls over its back. It appears to be wearing a metal chain collar. In the background to the left, the wheel of a motorcycle or scooter is visible, suggesting the photo was taken in a garage or driveway area.
+2026-04-13 13:39:14,536 - Query: hello | Answer: Hello! I am VisionAI. How can I help you today? If you have any images you'd like me to analyze or questions about visual content, please feel free to share them!
+2026-04-14 09:31:15,995 - Query: hello | Answer: Hello! I am VisionAI. How can I help you today? If you have an image you'd like me to analyze, please feel free to upload it!
+2026-04-14 09:31:39,251 - Query: explain this image  | Answer: This image features an adorable, fluffy kitten with several striking characteristics:
+
+*   **Appearance:** The kitten has soft, dense fur with a bicolor pattern—grey (often called "blue" in cat breeding) and white. It has a round face, which is characteristic of breeds like the British Shorthair.
+*   **Facial Features:** It has very large, dark, and expressive eyes that give it a curious and gentle look. Its small pink nose and long white whiskers add to its cute appearance.
+*   **Pose and Composition:** The kitten is sitting upright and looking directly at the camera. The background is a simple, neutral beige, which ensures all the focus remains on the kitten.
+
+Overall, the image is a high-quality portrait designed to highlight the kitten's innocence and charm.
+2026-04-14 11:14:28,806 - Query: hello | Answer: Hello! How can I help you today? Please feel free to upload an image if you have any questions about one!
+2026-04-14 11:15:03,926 - Query: what is in this image | Answer: The image shows a vibrant underwater scene. It features several dolphins swimming together, along with a variety of colorful tropical fish such as a clownfish, an emperor angelfish, and a multi-colored wrasse. The background is a beautiful coral reef teeming with life in deep blue water.
+2026-04-14 11:15:26,356 - Query: efrw | Answer: This image depicts a vibrant underwater scene. It features several dolphins swimming through clear blue water. In the foreground, there is a colorful coral reef with various tropical fish, including a clownfish and a bright yellow and blue angelfish.
+
+If you have a specific question about this image, please feel free to ask! Otherwise, you can say "exit" to end the session or use the "Reset" button to start over.
+2026-04-14 11:15:46,029 - Rejected blurry image: blur.jpeg
+2026-04-14 11:16:14,627 - Query: expain the image | Answer: You have provided two different images:
+
+**Image 1: Joyful Girl Jumping**
+This image features a young girl captured in mid-air against a vibrant, solid yellow background. She is jumping with a look of pure joy and excitement. She is wearing a light pink long-sleeved top, a denim mini-skirt, and white sneakers. Her arms are spread wide and her hair is flowing, emphasizing her energetic movement.
+
+**Image 2: African Elephant in the Wild**
+The second image shows a majestic African elephant standing in a lush green grassy field. The elephant is facing the camera, showcasing its large ears and long, curved tusks. In the background, there is a dense line of trees under a cloudy, overcast sky. The overall scene captures the elephant in its natural habitat.
+2026-04-14 11:16:30,489 - Query: exit | Answer: Goodbye! Please use the 'Reset' button to clear the session.
+2026-04-16 12:14:33,973 - Query: what is in this image | Answer: This image shows a Ferrari Purosangue, a luxury high-performance SUV crossover. It is a sleek, four-door red vehicle parked on a light-colored dirt road with lush green fields in the background under a cloudy sky. The car features distinctive Ferrari styling, including the iconic prancing horse emblem on the front fender.
+2026-04-16 12:15:10,966 - Query: what is ferrari is it a girl | Answer: Based on the image provided, a Ferrari is not a girl; it is a high-performance luxury automobile. The vehicle shown in the image is a red Ferrari, specifically the Purosangue model, which is a high-performance luxury SUV.
+2026-04-16 12:15:48,848 - Query: But there is a girl also withv that name | Answer: That is correct! "Ferrari" can indeed be a name for a person, although it is more commonly known as a surname or the name of this famous Italian car brand. 
+
+The vehicle in the image is a **Ferrari Purosangue**. Interestingly, many other Ferrari models also share names with people or places that are used as names, such as the Ferrari **Roma** or the Ferrari **California**.
+2026-04-16 12:16:44,777 - Query: show me the image of that girl named with ferrari | Answer: Based on the image provided, there is no girl. Instead, the image shows a red Ferrari car, specifically the Ferrari Purosangue, parked on a dirt path surrounded by green fields.
+2026-04-16 12:17:29,441 - Query: how many wheels are there  | Answer: In the image provided, there are **2 wheels** clearly visible on the side of the car facing the camera. However, as this is a standard four-wheeled vehicle, there would be a total of **4 wheels** on the car.
+2026-04-16 12:18:51,290 - Query: there is one extra wheel also it has 5 wheels  | Answer: Based on the image provided, this red Ferrari (a Purosangue) appears to be a standard four-wheeled vehicle. From this specific angle, we can clearly see the two wheels on the driver's side.
+
+If you are counting **five wheels**, you might be including the **steering wheel** inside the car! If you see a fifth wheel somewhere else on the exterior, please let me know where you're looking.
+2026-04-16 12:19:55,190 - Query: Aare thatv one extra one wheel is present in the car dicky for emergency  | Answer: Based on the image provided, the car is a red Ferrari Purosangue.
+
+In modern high-performance and luxury vehicles like this one, there is typically **no full-sized extra wheel** (spare tire) stored in the trunk (dicky). Most such cars are equipped with a tire repair kit or run-flat tires to save weight and space. However, since the trunk is closed in the image, its contents cannot be seen directly.
+2026-04-16 12:24:30,885 - Query: give me the recipe for making biryani | Answer: Based on the delicious-looking biryani in the image, here is a classic recipe for **Chicken Dum Biryani**:
+
+### **Ingredients:**
+*   **For the Meat Marination:** 500g chicken, 1 cup yogurt, 1 tbsp ginger-garlic paste, 1 tsp red chili powder, ½ tsp turmeric, 1 tsp garam masala, and salt.
+*   **For the Rice:** 2 cups long-grain Basmati rice, whole spices (cinnamon, cardamom, cloves, bay leaf).
+*   **For Layering:** 2 large sliced and deep-fried onions (biryani), ½ cup fresh mint and coriander leaves, 2 tbsp ghee, saffron soaked in warm milk.
+
+### **Instructions:**
+1.  **Marinate:** Mix the chicken with the marination ingredients and let it rest for at least 1 hour (preferably overnight).
+2.  **Parboil Rice:** Wash the rice and soak for 30 minutes. Boil water with whole spices and salt. Add rice and cook until it is about **70% done** (it should still have a bite). Drain the water.
+3.  **Cook the Chicken:** In a heavy-bottomed pot, heat some oil/ghee and cook the marinated chicken until it is almost tender and the gravy has thickened.
+4.  **Layering:** Spread a layer of the cooked chicken at the bottom of the pot. Top it with a layer of the parboiled rice. Sprinkle fried onions, chopped mint, coriander, and the saffron milk. Repeat layers if needed.
+5.  **The "Dum" Process:** Close the lid tightly (you can use dough to seal the edges to trap the steam, as seen by the steam in your image). Cook on a very low flame for 15–20 minutes.
+6.  **Serve:** Gently fluff the rice from the sides and serve hot with raita or salan.
+
+Enjoy your homemade biryani!
+2026-04-16 12:25:18,922 - Query: okay now tell me after eating this biryani what wil happen | Answer: Based on the image of this steaming, flavorful biryani, here is what will likely happen after you enjoy it:
+
+1. **Immense Satisfaction:** Looking at the perfectly separated long-grain rice, the rich colors from the spices, and the fresh herbs, you will likely experience a wonderful burst of flavors and feel very satisfied.
+2. **A "Food Coma":** Biryani is a hearty, calorie-dense meal. After eating a portion this generous, you will probably feel very full and might experience "postprandial somnolence"—the classic urge to take a long nap.
+3. **Aromatic Afterglow:** Given how much steam is rising from the bowl, the aromatic spices are likely very potent. You'll probably be enjoying the lingering scent and taste of those spices for quite a while after you're done.
+
+It looks like an incredibly delicious meal!
+2026-04-16 12:26:38,149 - Query: No this will not happen it will digested easily and now tell me what will happen after that digestion in which it is coverted | Answer: Based on the image of biryani, which is composed of rice, meat, and fats (like oil or ghee), here is what these components are converted into after digestion:
+
+1.  **Carbohydrates (from the rice):** These are broken down into simple sugars, primarily **glucose**. Glucose is the body's main source of energy.
+2.  **Proteins (from the meat):** These are broken down into **amino acids**. Your body uses these building blocks to repair tissues, build muscle, and create enzymes and hormones.
+3.  **Fats (from the meat and oils):** These are converted into **fatty acids and glycerol**. These are used for long-term energy storage, protecting organs, and helping the body absorb certain vitamins.
+
+In summary, after digestion, this meal is converted into energy, building materials for your body, and essential nutrients.
+2026-04-16 14:08:16,948 - Query: hello | Answer: Hello! I am VisionAI. How can I help you today? If you have an image you'd like me to analyze, please feel free to upload it!
+2026-04-16 14:51:59,352 - Query: what is in this image | Answer: This image features a large elephant standing in a lush, green grassy field. The elephant has long, prominent tusks and is facing towards the camera. In the background, there is a dense forest under a cloudy sky.
+2026-04-16 14:52:32,466 - Query: give me resipe of biriyani | Answer: Based on the image you provided, here is a recipe for a classic, aromatic Biryani similar to the one shown.
+
+### **Classic Biryani Recipe**
+
+This recipe follows the "Dum" style of cooking, where the rice and meat are layered and slow-cooked to perfection.
+
+#### **Ingredients:**
+
+**For the Marinade:**
+*   500g Chicken or Mutton (cut into pieces)
+*   1 cup thick yogurt (curd)
+*   1 tbsp Ginger-Garlic paste
+*   1 tsp Turmeric powder
+*   1 tsp Red chili powder
+*   1 tbsp Biryani Masala powder
+*   Salt to taste
+*   A handful of chopped mint and coriander leaves
+
+**For the Rice:**
+*   2 cups Long-grain Basmati rice (soaked for 30 minutes)
+*   Whole spices: 2 bay leaves, 4 green cardamoms, 1-inch cinnamon stick, 3-4 cloves
+*   Salt (enough to make the water taste like seawater)
+
+**For Layering & Garnish:**
+*   2 large onions, thinly sliced and deep-fried until golden brown (Birista)
+*   2 tbsp Ghee (clarified butter)
+*   A pinch of saffron soaked in 2 tbsp warm milk (for the orange/yellow color)
+*   Fresh coriander and mint leaves
+
+---
+
+#### **Instructions:**
+
+1.  **Marinate the Meat:** In a large bowl, mix the meat with yogurt, ginger-garlic paste, turmeric, chili powder, biryani masala, salt, and fresh herbs. Let it marinate for at least 1 hour (overnight is better).
+2.  **Cook the Meat:** In a heavy-bottomed pot, heat some oil or ghee. Add the marinated meat and cook until it is about 80% done and the gravy has thickened. Set aside.
+3.  **Prepare the Rice:** Boil a large pot of water with whole spices and salt. Add the soaked rice and cook until it is about 70% done (the grain should still have a slight "bite" to it). Drain the water.
+4.  **Layering:** 
+    *   In a heavy pot, spread a layer of the cooked meat at the bottom. 
+    *   Top it with half of the parboiled rice.
+    *   Sprinkle half of the fried onions, coriander, mint, and a drizzle of ghee.
+    *   Add the remaining rice as the final layer.
+    *   Pour the saffron milk over the top to create those beautiful yellow and white rice patches seen in your image.
+    *   Top with the rest of the fried onions and herbs.
+5.  **The "Dum" (Steaming):** Cover the pot with a tight-fitting lid (you can use aluminum foil or dough to seal the edges). Cook on very low heat for 15–20 minutes. This allows the flavors to meld and the rice to finish cooking in the steam.
+6.  **Serve:** Gently fluff the rice with a fork, mixing the layers slightly. Serve hot with raita (yogurt dip) or salan, just like the side dish pictured!
+2026-04-16 15:36:43,602 - Query: what is there in this image  | Answer: In this image, there is an adorable, fluffy kitten with grey and white fur. It has very large, dark eyes and a small pink nose, and is looking directly at the camera against a neutral background.
+2026-04-16 15:41:19,576 - Query: how many yellow cars are there in this image? | Answer: There are 20 yellow cars in this image.
+2026-04-16 15:41:43,260 - Query: describe this image | Answer: This is a high-angle, top-down aerial photograph of a bustling city intersection crowded with various vehicles. 
+
+Key elements of the image include:
+*   **Traffic Congestion:** A large number of vehicles, including cars, yellow taxis, and several long buses, are packed into the intersection and the streets leading to it.
+*   **Variety of Vehicles:** You can see several types of transport: large white articulated buses, smaller city buses (including one orange one), and many private cars in colors like white, black, blue, and red. Numerous yellow taxis are prominent throughout the scene.
+*   **Infrastructure:** The image clearly shows crosswalks (zebra crossings) and the layout of a multi-way intersection.
+*   **Urban Environment:** Green trees line some of the streets and are clustered near the buildings at the corners. Several multi-story buildings are partially visible on the edges of the frame.
+*   **Watermark:** A prominent logo for "freepik.com" is located near the bottom center of the image.
+
+The overall impression is one of intense urban activity and heavy midday traffic in a major city.
+2026-04-16 15:43:37,514 - Query: compare the two images  | Answer: Both images capture the density and complexity of urban traffic, but they do so from very different perspectives and at different times of day:
+
+**Image 1: Top-Down Daytime View**
+*   **Perspective:** This is a bird's-eye or high-angle view, looking directly down at a large, complex multi-way intersection. It provides a structural look at how traffic flows through a major junction.
+*   **Lighting:** The scene is set during the day with natural, even lighting that clearly defines the colors and shapes of the vehicles.
+*   **Composition:** The focus is on the spatial arrangement of numerous cars, yellow taxis, and large buses as they navigate the crossing. Surrounding the roads are patches of green trees and urban buildings.
+
+**Image 2: Street-Level Nighttime View**
+*   **Perspective:** This image is taken from a much lower, more traditional eye-level perspective looking down a long city street. This viewpoint makes the viewer feel like they are part of the scene.
+*   **Lighting:** It is a nighttime scene illuminated by artificial light sources, including bright neon billboards, streetlights, and the red and white glows of vehicle headlights and taillights.
+*   **Composition:** The focus is on the vibrant, busy atmosphere of city life. The street is lined with tall buildings, tangled power lines, and street-level activity, creating a sense of energy and motion.
+
+**In summary:** While both images show heavy traffic, the first image offers an analytical, structural view of a busy intersection during the day, whereas the second image captures the dynamic and illuminated energy of a city street at night.
+2026-04-16 15:59:56,152 - Query: explain | Answer: Based on the image provided, this is the **Ferrari Purosangue**.
+
+Here is an explanation of what makes this vehicle significant:
+
+*   **Ferrari's First SUV:** While Ferrari prefers to describe it as a "four-door, four-seater sports car," it is the brand's first entry into the high-performance luxury SUV/crossover market.
+*   **Design:** The Purosangue (Italian for "thoroughbred") features a sleek, aerodynamic design that maintains Ferrari's sporty aesthetic despite its higher ground clearance. A unique feature is its "welcome doors"—the rear doors are rear-hinged (suicide doors) to allow easier access to the back seats.
+*   **Performance:** Unlike many competitors that use turbocharged engines, the Purosangue is powered by a front-mid-mounted, naturally aspirated 6.5-liter V12 engine, staying true to Ferrari's heritage.
+*   **Context:** This image appears to be a professional photograph (noting the "Car and Driver" watermark) showcasing the vehicle in a scenic, rural setting to highlight its versatility compared to traditional Ferrari supercars.
+2026-04-16 16:05:36,052 - Query: which color it is  | Answer: The car in the image is a deep metallic red with black accents on the lower body, front bumper, and wheel arches.
+2026-04-16 16:10:22,653 - Query: which brand it is  | Answer: Based on the iconic yellow "Prancing Horse" logo visible on the front fender and the overall design, this is a **Ferrari**. This specific model appears to be the **Ferrari Purosangue**, the brand's first four-door, four-seater performance SUV.
+2026-04-18 09:29:54,705 - Query: hello | Answer: Hello! I am VisionAI, your helpful assistant for image analysis. \U0001f44b
+
+Please upload an image and ask a question if you would like me to describe something for you. \U0001f5bc\ufe0f
+
+How can I help you today? \U0001f60a
+2026-04-18 10:11:17,158 - Error for query 'what is there in this image ?': 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 42.850483794s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 42
+}
+]
+2026-04-18 10:12:38,603 - Error for query 'what is there in this image': 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 21.327307133s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 21
+}
+]
+2026-04-18 10:13:12,721 - Error for query 'hello': 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 47.220980782s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 47
+}
+]
+2026-04-18 10:14:24,056 - Error for query 'what is there in this image': 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 35.896235399s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 35
+}
+]
+2026-04-18 10:14:29,636 - Error for query 'hello': 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 30.325892908s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 30
+}
+]
+2026-04-18 10:15:37,534 - Error for query 'hello': 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 22.416981182s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 22
+}
+]
+2026-04-18 10:16:36,572 - Error for query 'hello': 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-04-18 10:17:22,697 - Error for query 'hello': 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 37.240907351s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 37
+}
+]
+2026-04-18 10:19:18,704 - Error for query 'hi': 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 41.237038235s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 41
+}
+]
+2026-04-18 10:29:03,561 - Rate limited (attempt 1/3). Retrying in 15s...
+2026-04-18 10:29:18,720 - Rate limited (attempt 2/3). Retrying in 30s...
+2026-04-18 10:29:48,929 - Error for query 'hello': 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 10.608616612s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 10
+}
+]
+2026-04-18 10:31:32,595 - Rate limited (attempt 1/3). Retrying in 15s...
+2026-04-18 10:31:47,795 - Rate limited (attempt 2/3). Retrying in 30s...
+2026-04-18 10:32:18,002 - Error for query 'hello': 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 41.515493704s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 41
+}
+]
+2026-04-18 10:40:12,123 - AFC is enabled with max remote calls: 10.
+2026-04-18 10:40:12,472 - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-18 10:40:12,484 - Rate limited (attempt 1/3). Retrying in 15s...
+2026-04-18 10:40:27,496 - AFC is enabled with max remote calls: 10.
+2026-04-18 10:40:27,849 - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-18 10:40:27,849 - Rate limited (attempt 2/3). Retrying in 30s...
+2026-04-18 10:40:57,850 - AFC is enabled with max remote calls: 10.
+2026-04-18 10:40:58,059 - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-18 10:40:58,120 - Error for query 'hello': 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 1.16771709s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '1s'}]}}
+2026-04-18 10:44:28,711 - AFC is enabled with max remote calls: 10.
+2026-04-18 10:44:29,045 - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-04-17:generateContent "HTTP/1.1 404 Not Found"
+2026-04-18 10:44:29,069 - Error for query 'hello': 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-04-18 10:46:03,446 - AFC is enabled with max remote calls: 10.
+2026-04-18 10:46:03,695 - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-18 10:46:03,696 - Rate limited (attempt 1/3). Retrying in 15s...
+2026-04-18 10:46:18,698 - AFC is enabled with max remote calls: 10.
+2026-04-18 10:46:18,988 - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-18 10:46:18,988 - Rate limited (attempt 2/3). Retrying in 30s...
+2026-04-18 10:46:48,993 - AFC is enabled with max remote calls: 10.
+2026-04-18 10:46:49,274 - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-18 10:46:49,283 - Error for query 'hi': 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\nPlease retry in 9.956200838s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '9s'}]}}
+2026-04-18 10:48:00,588 - AFC is enabled with max remote calls: 10.
+2026-04-18 10:48:00,893 - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-18 10:48:00,893 - Rate limited (attempt 1/3). Retrying in 15s...
+2026-04-18 10:48:15,896 - AFC is enabled with max remote calls: 10.
+2026-04-18 10:48:16,164 - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-18 10:48:16,167 - Rate limited (attempt 2/3). Retrying in 30s...
+2026-04-18 10:48:46,183 - AFC is enabled with max remote calls: 10.
+2026-04-18 10:48:46,429 - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-18 10:48:46,439 - Error for query 'hi': 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\nPlease retry in 12.804412916s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '12s'}]}}
+2026-04-18 10:50:52,218 - Query: hi | Answer: Hello! I am VisionAI, your helpful assistant. \U0001f916
+
+How can I assist you today? Please feel free to upload an image or ask a question about one. \U0001f4f8
+2026-04-18 10:51:17,592 - Query: what is in this image | Answer: This image features a vibrant red Ferrari Purosangue luxury SUV parked on a dirt road. \U0001f3ce\ufe0f
+
+The vehicle is set against a background of lush green fields and a cloudy sky. \U0001f33f\u2601\ufe0f
+2026-04-18 11:01:11,303 - Query: what is in this image | Answer: Hello! I see a stunning red Ferrari Purosangue in this image. \U0001f3ce\ufe0f
+
+It is a luxury high-performance SUV parked on a rural road. \U0001f697
+
+The car is surrounded by vibrant green fields under a cloudy sky. \U0001f324\ufe0f
+2026-04-18 11:02:43,524 - Query: describe the latest uploaded image | Answer: The latest image shows a young girl jumping high in the air with a look of pure joy. She is set against a bright solid orange background which makes her stand out. \U0001f31f
+
+She is dressed in a light pink long-sleeved shirt, a denim skirt, and white sneakers. Her arms are raised as she leaps, showing lots of energy and happiness. \U0001f388
+2026-04-18 11:03:42,911 - Query: What is the mood of the girl in the image | Answer: The girl in the image appears to be very happy, joyful, and full of energy! \U0001f31f 
+
+She is jumping with her arms wide open and a big smile on her face. \U0001f483 It looks like she is celebrating or feeling very excited! \u2728
+2026-05-02 12:26:53,023 - Query: hi | Answer: Hello there! I am VisionAI, your helpful visual assistant. \U0001f916
+
+How can I help you today? Please feel free to upload an image if you would like me to analyze something for you. \U0001f4f8\u2728
+2026-05-02 12:27:43,425 - Query: what is there in this image  | Answer: This image captures a bustling city street at night filled with heavy traffic. \U0001f697\U0001f695
+
+There are many cars, buses, and motorbikes on the road. You can see bright billboards, streetlights, and a dense web of overhead power lines hanging between the buildings. \U0001f303\u2728
+2026-05-02 12:35:11,018 - Query: hi | Answer: Hello there! I am VisionAI, your helpful assistant.
+
+How can I help you today? Please upload an image if you would like me to analyze it for you! \U0001f44b\u2728
+2026-05-02 12:42:52,254 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20female%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%3A%20long%20wavy%20in%20jet%20black%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20medium%20brown%20-%20Face%20shape%3A%20heart%20-%20Facial%20hair%3A%20none%20-%20Expression%3A%20genuinely%20happy%20%28intensity%3A%207/10%29%20-%20Age%20appearance%3A%2020-25%20-%20Accessories%3A%20silver-toned%20drop%20earrings%2C%20silver-toned%20ornate%20necklace%20-%20Distinguishing%20features%3A%20prominent%20dimples%20when%20smiling%20OUTFIT%3A%20-%20traditional%20Indian%20navy%20blue%20saree%20with%20decorative%20silver%20embroidery%20and%20a%20lace%20border%20VISUAL%20STYLE%3A%20-%20Style%3A%20modern%203D%20cartoon%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1777705971 "HTTP/1.1 200 OK"
+2026-05-02 12:44:18,659 - Avatar generation error: 
+2026-05-02 12:45:37,402 - Avatar generation error: 
+2026-05-02 12:47:22,487 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20male%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%3A%20voluminous%20messy%20quiff%20in%20jet%20black%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20medium%20brown%20-%20Face%20shape%3A%20oval%20-%20Facial%20hair%3A%20full%20well-groomed%20beard%20and%20mustache%20-%20Expression%3A%20subtle%20smile%20%28intensity%3A%204/10%29%20-%20Age%20appearance%3A%2020-25%20-%20Accessories%3A%20none%20-%20Distinguishing%20features%3A%20thick%20eyebrows%2C%20dense%20well-defined%20beard%2C%20voluminous%20textured%20hair%20OUTFIT%3A%20-%20smart%20casual%3A%20dark%20purple%20blazer%20over%20a%20white%20button-down%20shirt%20and%20black%20trousers%20VISUAL%20STYLE%3A%20-%20Style%3A%20modern%203D%20cartoon%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1777706231 "HTTP/1.1 200 OK"
+2026-05-02 12:48:40,226 - Avatar generation error: 
+2026-05-02 12:49:55,228 - Avatar generation error: 
+2026-05-02 12:51:52,378 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20female%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%3A%20long%20wavy%2C%20side-swept%20in%20jet%20black%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20medium%20brown%20-%20Face%20shape%3A%20oval%20-%20Facial%20hair%3A%20none%20-%20Expression%3A%20subtle%20smile%20%28intensity%3A%202/10%29%20-%20Age%20appearance%3A%2020-25%20-%20Accessories%3A%20small%20silver%20nose%20stud%2C%20small%20decorative%20bindi%20-%20Distinguishing%20features%3A%20small%20bindi%20on%20forehead%2C%20small%20nose%20stud%20on%20the%20left%20nostril%2C%20faint%20beauty%20mark%20on%20the%20right%20side%20of%20the%20chin%20OUTFIT%3A%20-%20traditional%20South%20Asian%20kurti%20with%20green%20and%20white%20floral%20patterns%20and%20red%20embroidered%20neckline%20VISUAL%20STYLE%3A%20-%20Style%3A%20modern%203D%20cartoon%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1777706478 "HTTP/1.1 200 OK"
+2026-05-02 12:53:13,863 - Avatar generation error: The AI generation service took too long to respond. Please try again.
+2026-05-02 12:55:21,309 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20female%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%3A%20long%20wavy%20hair%20pulled%20over%20one%20shoulder%20in%20jet%20black%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20medium%20brown%20-%20Face%20shape%3A%20oval%20-%20Facial%20hair%3A%20none%20-%20Expression%3A%20subtle%20smile%20%28intensity%3A%202/10%29%20-%20Age%20appearance%3A%2020-25%20-%20Accessories%3A%20small%20white%20bindi%20on%20the%20forehead%2C%20tiny%20silver%20nose%20stud%20-%20Distinguishing%20features%3A%20white%20circular%20bindi%2C%20small%20nose%20stud%20on%20her%20right%20nostril%20OUTFIT%3A%20-%20green%20and%20white%20floral%20patterned%20kurti%20with%20an%20embroidered%20pink%20and%20red%20V-neck%20border%20VISUAL%20STYLE%3A%20-%20Style%3A%20realistic%20digital%20art%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1777706720&model=turbo "HTTP/1.1 200 OK"
+2026-05-03 13:31:23,427 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20female%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%3A%20medium%20length%20pulled%20back%20in%20jet%20black%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20medium%20brown%20-%20Face%20shape%3A%20round%20-%20Facial%20hair%3A%20none%20-%20Expression%3A%20subtle%20smile%20%28intensity%3A%202/10%29%20-%20Age%20appearance%3A%2018-24%20-%20Accessories%3A%20none%20-%20Distinguishing%20features%3A%20slight%20dark%20circles%20under%20eyes%20OUTFIT%3A%20-%20casual%20reddish-pink%20graphic%20t-shirt%20VISUAL%20STYLE%3A%20-%20Style%3A%20modern%203D%20cartoon%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1777795279&model=turbo "HTTP/1.1 200 OK"
+2026-05-03 14:03:48,894 - Query: hi | Answer: Hello there! I am VisionAI. \U0001f916
+
+How can I help you today? Please feel free to upload an image if you would like me to analyze it for you. \U0001f4f8
+2026-05-03 14:04:25,026 - Query: what is in this image  | Answer: This is a top down aerial view of a very busy city intersection crowded with heavy traffic. \U0001f697
+
+The image shows numerous vehicles including yellow taxis, colorful cars, and long buses packed together on the streets. \U0001f695
+
+You can also see crosswalks, pedestrians, and green trees surrounding the urban area. \U0001f3d9\ufe0f\U0001f68c
+2026-05-03 14:04:45,415 - Query: how many yellow car are there | Answer: There are approximately 21 yellow cars or taxis visible in this busy city intersection. \U0001f695
+
+It looks like a very crowded area with plenty of traffic moving in all directions! \U0001f6a6
+2026-05-03 14:04:58,663 - Query: ok  | Answer: VisionAI here! I see the image you uploaded of a bustling city intersection. \U0001f3d9\ufe0f
+
+There are many vehicles including yellow taxis, white buses, and various cars navigating the busy streets from an aerial view. \U0001f695 \U0001f68c
+
+Please let me know if you have a specific question about this scene! \U0001f60a
+2026-05-03 14:09:40,923 - Avatar generation error: [Errno 11002] getaddrinfo failed
+2026-05-03 14:18:03,103 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20male%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%20Style%3A%20MUST%20BE%20EXACTLY%20thinning%2C%20short%20hair%20combed%20back%20away%20from%20the%20face%20and%20tucked%20behind%20ears%20-%20Hair%20Color%3A%20white%20and%20silver-grey%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20fair%20-%20Face%20shape%3A%20oblong%20-%20Facial%20hair%3A%20clean-shaven%20-%20Expression%3A%20contemplative%20%28intensity%3A%203/10%29%20-%20Age%20appearance%3A%2085-95%20-%20Accessories%3A%20none%20-%20Distinguishing%20features%3A%20deep%20forehead%20wrinkles%2C%20prominent%20crow%27s%20feet%2C%20age%20spots%20on%20temples%20and%20forehead%2C%20sagging%20skin%20around%20the%20jaw%20and%20neck%20OUTFIT%3A%20-%20white%20collared%20shirt%20layered%20under%20a%20beige%20ribbed%20knit%20cardigan%20VISUAL%20STYLE%3A%20-%20Style%3A%20modern%203D%20cartoon%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1777798079&model=turbo "HTTP/1.1 200 OK"
+2026-05-03 14:34:29,367 - Error for query 'hi': 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.
+2026-05-03 14:36:26,129 - Error for query 'Hello, are you working?': 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.
+2026-05-03 14:36:58,687 - Invalid file format. First bytes: b'\xff\xd8\xff\xe0'
+2026-05-03 14:37:11,037 - Face analysis error: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.
+2026-05-03 14:37:32,852 - Error for query 'hello': 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.
+2026-05-03 14:47:59,482 - Query: hi | Answer: Hello! I am VisionAI, your helpful assistant. I am ready to analyze any images you share with me. How can I assist you today? \U0001f916\u2728
+2026-05-03 14:48:23,127 - Invalid file format. First bytes: b'\xff\xd8\xff\xe0'
+2026-05-03 14:48:40,616 - Avatar generation error: [Errno 11002] getaddrinfo failed
+2026-05-03 14:54:25,839 - Invalid file format. First bytes: b'\xff\xd8\xff\xe0'
+2026-05-03 14:54:32,293 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20female%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%20Style%3A%20MUST%20BE%20EXACTLY%20long%2C%20dark%2C%20wavy%20hair%20parted%20in%20the%20middle%20and%20swept%20over%20the%20shoulder%2C%20with%20some%20flyaway%20strands%20around%20the%20crown%20-%20Hair%20Color%3A%20jet%20black%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20medium%20brown%20-%20Face%20shape%3A%20oval%20-%20Facial%20hair%3A%20none%20-%20Expression%3A%20subtle%20smile%20%28intensity%3A%203/10%29%20-%20Age%20appearance%3A%2020-25%20-%20Accessories%3A%20small%20silver%20nose%20stud%20on%20the%20right%20nostril%2C%20small%20white%20bindi%20on%20the%20forehead%20-%20Distinguishing%20features%3A%20small%20bindi%20on%20forehead%2C%20nose%20piercing%20on%20her%20right%20side%20OUTFIT%3A%20-%20traditional%20Indian%20kurta%20with%20a%20green%20floral%20print%20and%20embroidered%20V-neckline%20in%20pink%20and%20gold%20VISUAL%20STYLE%3A%20-%20Style%3A%20modern%203D%20cartoon%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1777800270&model=turbo "HTTP/1.1 200 OK"
+2026-05-03 15:00:52,100 - Invalid file format. First bytes: b'\xff\xd8\xff\xe0'
+2026-05-03 15:00:58,457 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20female%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%20Style%3A%20MUST%20BE%20EXACTLY%20long%2C%20thick%2C%20wavy%20dark%20hair%2C%20parted%20in%20the%20middle%20and%20draped%20over%20the%20left%20shoulder%20-%20Hair%20Color%3A%20jet%20black%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20medium%20brown%20-%20Face%20shape%3A%20oval%20-%20Facial%20hair%3A%20none%20-%20Expression%3A%20subtle%20smile%20%28intensity%3A%203/10%29%20-%20Age%20appearance%3A%2020-25%20-%20Accessories%3A%20none%20-%20Distinguishing%20features%3A%20full%20well-defined%20eyebrows%2C%20thick%20hair%20texture%20OUTFIT%3A%20-%20casual%20pink%20crew-neck%20t-shirt%20VISUAL%20STYLE%3A%20-%20Style%3A%20modern%203D%20cartoon%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1777800656&model=turbo "HTTP/1.1 200 OK"
+2026-05-03 19:42:24,522 - Invalid file format. First bytes: b'\xff\xd8\xff\xe0'
+2026-05-03 19:42:33,468 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20female%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%20Style%3A%20MUST%20BE%20EXACTLY%20dark%20hair%20pulled%20back%20and%20away%20from%20the%20face%2C%20likely%20tied%20in%20a%20bun%20at%20the%20back%20-%20Hair%20Color%3A%20jet%20black%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20medium%20brown%20-%20Face%20shape%3A%20round%20-%20Facial%20hair%3A%20none%20-%20Expression%3A%20subtle%20smile%20%28intensity%3A%203/10%29%20-%20Age%20appearance%3A%2045-55%20-%20Accessories%3A%20silver-colored%20hanging%20earrings%20-%20Distinguishing%20features%3A%20none%20OUTFIT%3A%20-%20traditional%20South%20Asian%20attire%2C%20consisting%20of%20a%20green%20patterned%20dupatta%20draped%20over%20a%20maroon%20and%20blue%20printed%20kurta%20VISUAL%20STYLE%3A%20-%20Style%3A%20modern%203D%20cartoon%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1777817551&model=turbo "HTTP/1.1 200 OK"
+2026-05-03 19:43:00,195 - Invalid file format. First bytes: b'\xff\xd8\xff\xe0'
+2026-05-03 19:43:36,830 - Unexpected error on attempt 1: 
+2026-05-03 19:44:03,205 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20female%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%20Style%3A%20MUST%20BE%20EXACTLY%20dark%20hair%20pulled%20back%20neatly%20away%20from%20the%20face%2C%20likely%20tied%20in%20a%20bun%20at%20the%20back%20-%20Hair%20Color%3A%20black%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20medium%20brown%20-%20Face%20shape%3A%20round%20-%20Facial%20hair%3A%20none%20-%20Expression%3A%20subtle%20smile%20%28intensity%3A%203/10%29%20-%20Age%20appearance%3A%2035-45%20-%20Accessories%3A%20small%20circular%20stud%20earrings%20-%20Distinguishing%20features%3A%20soft%20facial%20features%20with%20slightly%20rounded%20cheeks%20OUTFIT%3A%20-%20traditional%20South%20Asian%20attire%2C%20featuring%20a%20green%20dupatta%20with%20white%20bandhani-style%20dot%20patterns%20over%20a%20multicolored%20patterned%20top%20VISUAL%20STYLE%3A%20-%20Style%3A%20modern%203D%20cartoon%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1777817586&model=turbo "HTTP/1.1 200 OK"
+2026-05-03 19:45:33,253 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20male%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%20Style%3A%20MUST%20BE%20EXACTLY%20thinning%20short%20hair%2C%20combed%20back%20on%20the%20top%20and%20sides%20with%20a%20prominent%20receding%20hairline%20-%20Hair%20Color%3A%20silvery%20white%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20fair%20-%20Face%20shape%3A%20oblong%20-%20Facial%20hair%3A%20clean-shaven%20-%20Expression%3A%20contemplative%20%28intensity%3A%203/10%29%20-%20Age%20appearance%3A%2080-90%20-%20Accessories%3A%20none%20-%20Distinguishing%20features%3A%20deep-set%20forehead%20wrinkles%2C%20prominent%20nasolabial%20folds%2C%20age%20spots%20on%20the%20forehead%20and%20cheeks%2C%20and%20slightly%20drooping%20eyelids%20OUTFIT%3A%20-%20classic%20elderly%20attire%20consisting%20of%20a%20white%20collared%20shirt%20underneath%20a%20beige%20ribbed%20knit%20cardigan%20VISUAL%20STYLE%3A%20-%20Style%3A%20modern%203D%20cartoon%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1777817720&model=turbo "HTTP/1.1 200 OK"
+2026-05-03 19:46:56,875 - Invalid file format. First bytes: b'\xff\xd8\xff\xe0'
+2026-05-03 19:47:04,080 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20female%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%20Style%3A%20MUST%20BE%20EXACTLY%20long%20dark%20hair%20swept%20to%20the%20side%20and%20partially%20covered%20by%20a%20shawl%20-%20Hair%20Color%3A%20dark%20brown%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20medium%20brown%20-%20Face%20shape%3A%20oval%20-%20Facial%20hair%3A%20none%20-%20Expression%3A%20genuinely%20happy%20%28intensity%3A%205/10%29%20-%20Age%20appearance%3A%2030-35%20-%20Accessories%3A%20large%20hoop%20earrings%20-%20Distinguishing%20features%3A%20wide%20and%20warm%20smile%20OUTFIT%3A%20-%20traditional%20South%20Asian%20attire%20featuring%20a%20dark%20patterned%20shawl/dupatta%20over%20a%20matching%20top%20VISUAL%20STYLE%3A%20-%20Style%3A%20modern%203D%20cartoon%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1777817822&model=turbo "HTTP/1.1 200 OK"
+2026-05-22 09:26:40,771 - Query: hello | Answer: Hello there! I am VisionAI, your friendly visual assistant. \U0001f60a
+
+How can I help you today? Please feel free to upload an image and ask me any questions about it! \U0001f4f8
+2026-05-22 09:42:01,843 - Invalid file format. First bytes: b'\xff\xd8\xff\xe0'
+2026-05-22 09:42:12,549 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20male%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%20Style%3A%20MUST%20BE%20EXACTLY%20thick%2C%20voluminous%2C%20textured%20hair%20styled%20with%20a%20side%20sweep%20and%20volume%20on%20top%20-%20Hair%20Color%3A%20dark%20brown%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20light%20olive%20-%20Face%20shape%3A%20oval%20-%20Facial%20hair%3A%20neatly%20trimmed%20full%20beard%20and%20connected%20mustache%20-%20Expression%3A%20subtle%20smile%20%28intensity%3A%204/10%29%20-%20Age%20appearance%3A%2020-25%20-%20Accessories%3A%20none%20-%20Distinguishing%20features%3A%20thick%2C%20well-defined%20eyebrows%20and%20a%20prominent%2C%20groomed%20beard%20OUTFIT%3A%20-%20plum-colored%20blazer%20over%20an%20open-collared%20white%20dress%20shirt%20VISUAL%20STYLE%3A%20-%20Style%3A%20modern%203D%20cartoon%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1779423127&model=turbo "HTTP/1.1 200 OK"
+2026-05-22 09:43:18,546 - Unexpected error on attempt 1: 
+2026-05-22 09:43:39,486 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20male%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%20Style%3A%20MUST%20BE%20EXACTLY%20thick%2C%20voluminous%2C%20textured%20hair%20styled%20with%20a%20side%20sweep%20and%20volume%20on%20top%20-%20Hair%20Color%3A%20dark%20brown%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20light%20olive%20-%20Face%20shape%3A%20oval%20-%20Facial%20hair%3A%20neatly%20trimmed%20full%20beard%20and%20connected%20mustache%20-%20Expression%3A%20subtle%20smile%20%28intensity%3A%204/10%29%20-%20Age%20appearance%3A%2020-25%20-%20Accessories%3A%20none%20-%20Distinguishing%20features%3A%20thick%2C%20well-defined%20eyebrows%20and%20a%20prominent%2C%20groomed%20beard%20OUTFIT%3A%20-%20plum-colored%20blazer%20over%20an%20open-collared%20white%20dress%20shirt%20VISUAL%20STYLE%3A%20-%20Style%3A%20anime%20style%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20futuristic%20neon%20city%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1779423168&model=turbo "HTTP/1.1 200 OK"
+2026-05-22 09:46:40,423 - Query: hello | Answer: Hello! \U0001f44b
+
+I am VisionAI, your helpful visual assistant. How can I help you today?
+
+Please upload an image, and I will be happy to analyze it for you! \U0001f4f8
+2026-05-22 09:47:08,079 - Query: what is in this image  | Answer: This image shows five beautiful, fluffy cats sitting side-by-side in a row on a light-colored rug. \U0001f431
+
+From left to right, they include a grey and white tabby, a light cream cat, a solid black cat, a dark grey cat, and a cream-colored cat wearing a red collar and leash. \U0001f43e
+
+They are all looking directly forward, making for a very cute group portrait! \U0001f440
+2026-05-22 15:43:51,343 - Invalid file format. First bytes: b'\xff\xd8\xff\xe0'
+2026-05-22 15:43:58,793 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20female%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%20Style%3A%20MUST%20BE%20EXACTLY%20hair%20pulled%20back%20neatly%20into%20a%20ponytail%2C%20cleared%20off%20the%20face%20-%20Hair%20Color%3A%20dark%20brown%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20light%20olive%20-%20Face%20shape%3A%20oval%20-%20Facial%20hair%3A%20none%20-%20Expression%3A%20serious/focused%20%28intensity%3A%202/10%29%20-%20Age%20appearance%3A%2020-25%20-%20Accessories%3A%20clear-framed%2C%20roundish%20prescription%20glasses%20-%20Distinguishing%20features%3A%20well-defined%20dark%20eyebrows%2C%20clear%20eyeglasses%20OUTFIT%3A%20-%20casual%20white%20t-shirt%20with%20graphic%20print%20VISUAL%20STYLE%3A%20-%20Style%3A%20modern%203D%20cartoon%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1779444837&model=turbo "HTTP/1.1 200 OK"
+2026-05-23 14:10:42,895 - Invalid file format. First bytes: b'\xff\xd8\xff\xe0'
+2026-05-23 14:10:52,648 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20female%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%20Style%3A%20MUST%20BE%20EXACTLY%20long%2C%20straight%20hair%20parted%20in%20the%20middle%20and%20draped%20over%20the%20shoulders%20-%20Hair%20Color%3A%20dark%20brown%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20medium%20brown%20-%20Face%20shape%3A%20oval%20-%20Facial%20hair%3A%20none%20-%20Expression%3A%20subtle%20smile%20%28intensity%3A%202/10%29%20-%20Age%20appearance%3A%2020-25%20-%20Accessories%3A%20thin%20silver%20chain%20necklace%20-%20Distinguishing%20features%3A%20thick%2C%20well-defined%20eyebrows%2C%20eyes%20captured%20in%20a%20partially%20closed%20or%20blinking%20state%20OUTFIT%3A%20-%20casual%20black%20crew-neck%20t-shirt%20VISUAL%20STYLE%3A%20-%20Style%3A%20modern%203D%20cartoon%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1779525651&model=turbo "HTTP/1.1 200 OK"
+2026-05-23 14:11:18,402 - Invalid file format. First bytes: b'\xff\xd8\xff\xe0'
+2026-05-23 14:11:54,870 - Unexpected error on attempt 1: 
+2026-05-23 14:12:22,656 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20female%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%20Style%3A%20MUST%20BE%20EXACTLY%20long%20straight%20hair%20parted%20down%20the%20middle%2C%20draping%20over%20the%20shoulders%20-%20Hair%20Color%3A%20dark%20brown%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20medium%20brown%20-%20Face%20shape%3A%20oval%20-%20Facial%20hair%3A%20none%20-%20Expression%3A%20subtle%20smile%20%28intensity%3A%203/10%29%20-%20Age%20appearance%3A%2020-25%20-%20Accessories%3A%20thin%20silver-colored%20chain%20necklace%2C%20long%20thin%20silver-colored%20drop%20earrings%20-%20Distinguishing%20features%3A%20thick%2C%20well-defined%20eyebrows%20OUTFIT%3A%20-%20casual%20black%20crewneck%20t-shirt%20VISUAL%20STYLE%3A%20-%20Style%3A%20modern%203D%20cartoon%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1779525684&model=turbo "HTTP/1.1 200 OK"
+2026-05-23 15:04:33,887 - Invalid file format. First bytes: b'\xff\xd8\xff\xe0'
+2026-05-23 15:04:44,792 - HTTP Request: GET https://image.pollinations.ai/prompt/Create%20a%20professional%203D%20bitmoji-style%20avatar%20with%20these%20exact%20specifications%3A%20SUBJECT%3A%20A%20female%20character%20FACE%20%26%20FEATURES%3A%20-%20Hair%20Style%3A%20MUST%20BE%20EXACTLY%20long%20straight%20hair%20parted%20down%20the%20middle%2C%20flowing%20over%20the%20shoulders%20-%20Hair%20Color%3A%20dark%20brown%20-%20Eyes%3A%20dark%20brown%20eyes%20-%20Skin%20tone%3A%20medium%20brown%20-%20Face%20shape%3A%20oval%20-%20Facial%20hair%3A%20none%20-%20Expression%3A%20subtle%20smile%20%28intensity%3A%203/10%29%20-%20Age%20appearance%3A%2020-25%20-%20Accessories%3A%20thin%20silver%20necklace%20chain%20-%20Distinguishing%20features%3A%20well-defined%20thick%20eyebrows%2C%20soft%20jawline%20OUTFIT%3A%20-%20casual%20black%20crew-neck%20t-shirt%20VISUAL%20STYLE%3A%20-%20Style%3A%20modern%203D%20cartoon%20%28like%20Snapchat%20Bitmoji%20/%20Pixar%20character%29%20-%20Background%3A%20clean%20light%20gray%20studio%20-%20Full%20body%20shot%20from%20head%20to%20feet%20-%20High%20quality%2C%20professional%20render%20-%20Clean%20lines%2C%20smooth%20shading%20-%20Vibrant%20but%20realistic%20colors?width=768&height=1024&nologo=true&seed=1779528883&model=turbo "HTTP/1.1 200 OK"

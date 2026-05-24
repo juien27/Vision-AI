@@ -1,0 +1,17 @@
+[2026-04-18 09:29:54] Response Time: 3.4s | Query: hello
+[2026-04-18 10:50:52] Response Time: 3.48s | Query: hi
+[2026-04-18 10:51:17] Response Time: 4.31s | Query: what is in this image
+[2026-04-18 11:01:11] Response Time: 9.02s | Query: what is in this image
+[2026-04-18 11:02:43] Response Time: 7.03s | Query: describe the latest uploaded image
+[2026-04-18 11:03:42] Response Time: 8.71s | Query: What is the mood of the girl in the image
+[2026-05-02 12:26:53] Response Time: 3.16s | Query: hi
+[2026-05-02 12:27:43] Response Time: 7.0s | Query: what is there in this image 
+[2026-05-02 12:35:11] Response Time: 2.8s | Query: hi
+[2026-05-03 14:03:48] Response Time: 2.57s | Query: hi
+[2026-05-03 14:04:25] Response Time: 4.08s | Query: what is in this image 
+[2026-05-03 14:04:45] Response Time: 5.61s | Query: how many yellow car are there
+[2026-05-03 14:04:58] Response Time: 3.1s | Query: ok 
+[2026-05-03 14:47:59] Response Time: 2.84s | Query: hi
+[2026-05-22 09:26:40] Response Time: 3.58s | Query: hello
+[2026-05-22 09:46:40] Response Time: 2.6s | Query: hello
+[2026-05-22 09:47:08] Response Time: 4.53s | Query: what is in this image 

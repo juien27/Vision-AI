@@ -1,0 +1,6 @@
+google-generativeai
+python-dotenv
+opencv-python
+fastapi
+uvicorn
+python-multipart
