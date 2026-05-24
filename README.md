@@ -217,3 +217,8 @@ Root `package.json` scripts:
 - Add environment variable support for frontend API base URL
 - Improve dependency management in `backend/requirements.txt`
 
+
+👩‍💻 Author
+
+Juien Mujawar
+AIML Student
