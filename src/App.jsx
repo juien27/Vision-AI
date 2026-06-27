@@ -428,11 +428,14 @@ function AvatarTab() {
   const [generating, setGenerating] = useState(false);
   const [features, setFeatures] = useState(null);
   const [avatarUrl, setAvatarUrl] = useState(null);
+
   const [customizations, setCustomizations] = useState({
-    style: "modern 3D cartoon",
+    style: "modern 3d cartoon",
     expression: "",
     background: "clean light gray studio",
+    pose: "standing neutral",             // ✅ NEW: default pose
   });
+
   const [isWebcamActive, setIsWebcamActive] = useState(false);
   const fileInputRef = useRef(null);
   const videoRef = useRef(null);
@@ -486,15 +489,14 @@ function AvatarTab() {
       canvas.height = video.videoHeight;
       const context = canvas.getContext("2d");
       context.drawImage(video, 0, 0, canvas.width, canvas.height);
-      
+
       canvas.toBlob(async (blob) => {
         if (blob) {
           const file = new File([blob], "webcam-capture.jpg", { type: "image/jpeg" });
           setSelectedFile(file);
           setPreviewUrl(URL.createObjectURL(file));
           stopWebcam();
-          
-          // Auto-generate avatar after capturing
+
           const detectedFeatures = await analyzeFace(file);
           if (detectedFeatures) {
             await generateAvatar(detectedFeatures);
@@ -512,7 +514,6 @@ function AvatarTab() {
     setFeatures(null);
     setAvatarUrl(null);
 
-    // Auto-generate avatar after uploading
     const detectedFeatures = await analyzeFace(file);
     if (detectedFeatures) {
       await generateAvatar(detectedFeatures);
@@ -525,19 +526,18 @@ function AvatarTab() {
       alert("Please select or capture an image first.");
       return null;
     }
-    
-    // Validate file
+
     if (!(targetFile instanceof File) && !(targetFile instanceof Blob)) {
       console.error("Invalid file object:", targetFile);
       alert("Invalid file format. Please select a valid image.");
       return null;
     }
-    
+
     if (targetFile.size === 0) {
       alert("File is empty. Please select a valid image.");
       return null;
     }
-    
+
     setAnalyzing(true);
     setFeatures(null);
 
@@ -549,7 +549,7 @@ function AvatarTab() {
         method: "POST",
         body: formData,
       });
-      
+
       const data = await res.json();
 
       if (!res.ok) {
@@ -584,6 +584,12 @@ function AvatarTab() {
     formData.append("style", customizations.style);
     formData.append("expression", customizations.expression);
     formData.append("background", customizations.background);
+    formData.append("pose", customizations.pose);           // ✅ NEW: send pose
+
+    console.log("🎨 Sending to backend:", {
+      style: customizations.style,
+      pose: customizations.pose,
+    });
 
     try {
       const res = await fetch(`${API_BASE}/generate-avatar`, {
@@ -596,7 +602,6 @@ function AvatarTab() {
         setGenerating(false);
       } else if (data.avatar_url) {
         setAvatarUrl(data.avatar_url);
-        // Do NOT setGenerating(false) here, we will wait for the image to load
       } else {
         setGenerating(false);
       }
@@ -624,17 +629,16 @@ function AvatarTab() {
     setFeatures(null);
     setAvatarUrl(null);
     setCustomizations({
-      style: "modern 3D cartoon",
+      style: "modern 3d cartoon",
       expression: "",
       background: "clean light gray studio",
+      pose: "standing neutral",           // ✅ NEW: reset pose too
     });
     stopWebcam();
   };
 
   const featureEntries = features
-    ? Object.entries(features).filter(
-      ([key]) => key !== "error"
-    )
+    ? Object.entries(features).filter(([key]) => key !== "error")
     : [];
 
   const genderClass = features
@@ -654,28 +658,28 @@ function AvatarTab() {
         {/* Upload/Webcam Actions */}
         {!previewUrl && !isWebcamActive && (
           <div style={{ display: "flex", gap: "0.5rem", marginBottom: "0.5rem" }}>
-             <button className="btn-primary" onClick={() => fileInputRef.current.click()} style={{ flex: 1 }}>
-                <Upload size={16} /> Upload Image
-             </button>
-             <button className="btn-primary" onClick={startWebcam} style={{ flex: 1, background: "var(--bg-accent)", border: "1px solid var(--glass-border)" }}>
-                <Camera size={16} /> Use Camera
-             </button>
+            <button className="btn-primary" onClick={() => fileInputRef.current.click()} style={{ flex: 1 }}>
+              <Upload size={16} /> Upload Image
+            </button>
+            <button className="btn-primary" onClick={startWebcam} style={{ flex: 1, background: "var(--bg-accent)", border: "1px solid var(--glass-border)" }}>
+              <Camera size={16} /> Use Camera
+            </button>
           </div>
         )}
 
         {/* Upload Zone / Webcam View */}
         {isWebcamActive ? (
           <div className="upload-zone" style={{ padding: "0.5rem", cursor: "default" }}>
-             <video ref={videoRef} autoPlay playsInline style={{ width: "100%", borderRadius: "8px", background: "#000" }} />
-             <canvas ref={canvasRef} style={{ display: "none" }} />
-             <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.5rem", width: "100%" }}>
-                <button className="btn-primary" onClick={captureImage} style={{ flex: 1 }}>
-                  📸 Capture
-                </button>
-                <button className="btn-primary" onClick={stopWebcam} style={{ flex: 1, background: "rgba(239, 68, 68, 0.12)", color: "#ef4444", border: "1px solid rgba(239, 68, 68, 0.15)" }}>
-                  Cancel
-                </button>
-             </div>
+            <video ref={videoRef} autoPlay playsInline style={{ width: "100%", borderRadius: "8px", background: "#000" }} />
+            <canvas ref={canvasRef} style={{ display: "none" }} />
+            <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.5rem", width: "100%" }}>
+              <button className="btn-primary" onClick={captureImage} style={{ flex: 1 }}>
+                📸 Capture
+              </button>
+              <button className="btn-primary" onClick={stopWebcam} style={{ flex: 1, background: "rgba(239, 68, 68, 0.12)", color: "#ef4444", border: "1px solid rgba(239, 68, 68, 0.15)" }}>
+                Cancel
+              </button>
+            </div>
           </div>
         ) : (
           <div
@@ -825,6 +829,7 @@ function AvatarTab() {
               Customization
             </h3>
 
+            {/* Avatar Style */}
             <div className="control-group">
               <label className="control-label">Avatar Style</label>
               <select
@@ -834,16 +839,17 @@ function AvatarTab() {
                   setCustomizations({ ...customizations, style: e.target.value })
                 }
               >
-                <option value="modern 3D cartoon">🎨 Modern 3D Cartoon</option>
-                <option value="Pixar-style 3D animation">🎬 Pixar Style</option>
-                <option value="anime style">🌸 Anime</option>
-                <option value="chibi kawaii style">🍡 Chibi</option>
-                <option value="realistic digital art">🖼️ Realistic</option>
-                <option value="comic book style">💥 Comic Book</option>
-                <option value="watercolor illustration">🎨 Watercolor</option>
+                <option value="modern 3d cartoon">🎨 Modern 3D Cartoon</option>
+                <option value="pixar style">🎬 Pixar Style</option>
+                <option value="anime">🌸 Anime</option>
+                <option value="chibi">🍡 Chibi</option>
+                <option value="realistic">🖼️ Realistic</option>
+                <option value="comic book">💥 Comic Book</option>
+                <option value="watercolor">🎨 Watercolor</option>
               </select>
             </div>
 
+            {/* Expression Override */}
             <div className="control-group">
               <label className="control-label">Expression Override</label>
               <select
@@ -869,6 +875,32 @@ function AvatarTab() {
               </select>
             </div>
 
+            {/* ✅ NEW: Pose Dropdown */}
+            <div className="control-group">
+              <label className="control-label">Pose</label>
+              <select
+                className="control-select"
+                value={customizations.pose}
+                onChange={(e) =>
+                  setCustomizations({ ...customizations, pose: e.target.value })
+                }
+              >
+                <option value="standing neutral">🧍 Standing Neutral</option>
+                <option value="confident arms crossed">💪 Arms Crossed</option>
+                <option value="hands on hips">🦸 Hands on Hips</option>
+                <option value="casual leaning">😏 Casual Leaning</option>
+                <option value="walking forward">🚶 Walking Forward</option>
+                <option value="sitting relaxed">🪑 Sitting Relaxed</option>
+                <option value="pointing forward">👉 Pointing Forward</option>
+                <option value="peace sign">✌️ Peace Sign</option>
+                <option value="superhero">🦸 Superhero</option>
+                <option value="thinking pose">🤔 Thinking Pose</option>
+                <option value="waving">👋 Waving</option>
+                <option value="jumping">🤸 Jumping</option>
+              </select>
+            </div>
+
+            {/* Background */}
             <div className="control-group">
               <label className="control-label">Background</label>
               <select
@@ -932,10 +964,10 @@ function AvatarTab() {
               src={avatarUrl}
               alt="Generated avatar"
               onLoad={() => setGenerating(false)}
-              onError={(e) => {
+              onError={() => {
                 setGenerating(false);
                 setAvatarUrl(null);
-                alert("Failed to load avatar image from the generation service. Please try again.");
+                alert("Failed to load avatar image. Please try again.");
               }}
               style={{ display: generating ? "none" : "block" }}
             />
@@ -971,7 +1003,7 @@ function AvatarTab() {
             </button>
             <button
               className="btn-primary"
-              onClick={generateAvatar}
+              onClick={() => generateAvatar()}
               disabled={generating}
               style={{
                 background: "var(--bg-accent)",
